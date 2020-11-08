@@ -1,2 +1,3 @@
+include ':rxjava'
 include ':app'
 rootProject.name = "Android Concepts"
