@@ -12,7 +12,7 @@ class Constants {
         const val GET_POST_COMMENTS_V2 = "/comments?postId={id}"
         const val POST_CREATE_POST = "/posts"
         const val PUT_UPDATE_POST ="/posts/{id}"
-        const val PATCH_POST = "/posts/{id}"
+        const val PATCH_UPDATE_POST = "/posts/{id}"
         const val DELETE_POST = "/posts/{id}"
 
         const val GET_ALBUM_PHOTOS = "/albums/{id}/photos"
@@ -26,6 +26,7 @@ class Constants {
         const val GET_PHOTOS = "/photos" //	5000 photos
         const val GET_TODOS = "/todos" //	200 todos
         const val GET_USERS = "/users" //	10 users
+        const val GET_USER = "/users/{id}"
 
     }
 
