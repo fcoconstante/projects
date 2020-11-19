@@ -9,7 +9,7 @@ import io.reactivex.annotations.Nullable
 
 
 @Entity(tableName = "repo")
-data class Repo (
+data class  Repo (
                  @PrimaryKey
                  @ColumnInfo(name = "id")
                  @SerializedName("id")  val id:String,
