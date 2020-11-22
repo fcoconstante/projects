@@ -3,15 +3,21 @@ package com.german.pojo.DataClasses
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.TypeConverters
+import com.german.room_db.TypeConverter
 import com.google.gson.annotations.SerializedName
+import org.jetbrains.annotations.NotNull
 
 
 @Entity(tableName = "User")
+@TypeConverters(TypeConverter::class)
 data class User(
+
+    @NotNull
     @PrimaryKey
     @ColumnInfo(name = "id")
     @SerializedName("id")
-    val id: Number?,
+    val id: Number,
 
     @ColumnInfo(name = "name")
     @SerializedName("name")
